@@ -10,6 +10,11 @@ body {
   font-family: Raleway, sans-serif;
 }
 
+address{
+  margin: 0 auto;
+  font-family: Raleway, sans-serif;
+}
+
 h1,
 h2,
 h3,
