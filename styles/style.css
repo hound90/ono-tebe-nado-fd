@@ -192,7 +192,6 @@
 }
 
 .card-link {
-  height: 100%;
   text-decoration: none;
 }
 
@@ -201,7 +200,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
 }
 
 .card_type_book {
@@ -220,7 +218,6 @@
 
 .card__title {
   display: flex;
-  
   padding-top: 48px;
   padding-left: 40px;
   padding-right: 40px;
@@ -235,8 +232,6 @@
 
 .card__text {
   display: flex;
-  
-  
   padding-bottom: 48px;
   padding-left: 40px;
   padding-right: 40px;
@@ -257,9 +252,70 @@
 }
 
 .about {
-  margin: 120px 24px 0px 24px;
-  height: 595px;
-  background-color: aquamarine;
+  padding: 120px 24px 0px 24px;
+  background-color: rgb(255, 255, 255);
+}
+
+.about__column {
+  display: grid;
+  grid-template-columns: 334px auto;
+  grid-auto-rows: auto;
+  grid-template-areas:
+      'logo grid_title'
+      '. grid_text';
+  column-gap: 25px;
+}
+
+.about__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  grid-area: logo;
+  place-self: center;
+  background-color: #000;  
+}
+
+.about__logo-image {
+  height: 114.55px;  
+  width: 148.54px;
+}
+
+.grid_title {
+  display: flex;
+  grid-area: grid_title;
+  flex-direction: row;
+  align-items: center;
+}
+
+.grid_text {
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 39px;
+  grid-area: grid_text;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #000;
+}
+
+.about_text_top {
+padding-bottom: 24px;
 }
 
 .footer{
